@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <block>
   <name>Frequency Sweeper</name>
-  <key>frequency_hopper_frequency_sweeper</key>
-  <category>[frequency_hopper]</category>
-  <import>import frequency_hopper</import>
-  <make>frequency_hopper.frequency_sweeper($initial_freq, $step, $max_freq)</make>
+  <key>freq_hopper_frequency_sweeper</key>
+  <category>[freq_hopper]</category>
+  <import>import freq_hopper</import>
+  <make>freq_hopper.frequency_sweeper($initial_freq, $step, $max_freq)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
