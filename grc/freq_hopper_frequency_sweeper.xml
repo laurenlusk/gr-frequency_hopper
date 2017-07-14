@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<block>
+  <name>Frequency Sweeper</name>
+  <key>frequency_hopper_frequency_sweeper</key>
+  <category>[frequency_hopper]</category>
+  <import>import frequency_hopper</import>
+  <make>frequency_hopper.frequency_sweeper($initial_freq, $step, $max_freq)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Initial Frequency</name>
+    <key>initial_freq</key>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Step</name>
+    <key>step</key>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Max Frequency</name>
+    <key>max_freq</key>
+    <type>float</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>clock</name>
+    <type>message</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>msg_out</name>
+    <type>message</type>
+  </source>
+</block>
