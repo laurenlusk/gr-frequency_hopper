@@ -31,5 +31,5 @@ except ImportError:
 	pass
 
 # import any pure python here
-from frequency_sweeper import frequency_sweeper
+from freq_hopper import freq_hopper
 #
